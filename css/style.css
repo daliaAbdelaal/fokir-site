@@ -1,0 +1,574 @@
+body
+{
+        font-family: "Roboto",sans-serif;
+        color: #555;
+        overflow: hidden;
+}
+.load
+{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #fff;
+        color: #ccc;
+        z-index: 99999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+}
+h1,h2,h3,h4,h5,h6
+{
+        
+        font-family:'Source Sans Pro', sans-serif
+}
+header
+{
+        background-image: url("../img/slider/slider-01.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        color: #fff;  
+      
+}     
+.overlay
+{
+        background-color: rgba(0, 0, 0, 0.8) ;
+        width: 100%;
+        height: 100%;
+}
+.navbar-dark .navbar-nav .nav-link{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+        transition: all 0.4s ease-in-out;
+}
+.navbar-dark .navbar-nav .active>.nav-link
+{
+        color: #ff305b;
+}
+.navbar-dark .navbar-nav .nav-link:hover
+{
+        color: #ff305b; 
+}
+.navbar-dark .navbar-brand
+{
+        color: #ff305b;
+        font-size: 24px;
+        font-weight: 600;
+}
+.navbar-dark .navbar-brand:hover
+{
+        color: #ff305b;
+}
+header h3
+{
+        margin: 0 0 10px;
+        font-size: 22px;
+        font-weight: 600;
+}
+header h1
+{
+        margin: 0 0 10px;
+        color: #ff305b;
+        font-size: 65px;
+        font-weight: bold;
+        text-transform: uppercase;
+}
+header h4
+{
+        font-size: 24px;
+        font-weight: lighter
+}
+
+
+/* section1 */
+.about-img
+{
+        position: relative;
+        border-radius: 5px;
+        border:8px solid #555 ;
+}
+.container-photo
+{
+        position: relative;
+        top: 20px;
+        left: 20px;
+        overflow: hidden;
+        border-radius: 5px;
+}
+.overlay-photo
+{
+        position:absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.57) ;
+        width: 100%;
+        height: 100%;
+        transition: all .5s;
+}
+.container-photo:hover .overlay-photo
+{
+        top: 0;
+}
+.icons 
+{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+}
+.icons i 
+{
+        color: #fff;
+        padding: 10px;
+        transition: 500ms all;
+}
+.icons i:hover
+{
+        color: #ff305b;
+}
+
+.about-content h3
+{
+   
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.about-content h3:first-letter
+{
+        color: #ff305b;
+}
+.about-content p 
+{
+        border-bottom: 1px dashed #999;
+        margin-bottom: 25px;
+        padding-bottom: 25px
+}
+.about-content ol li
+{
+        width: 50%;
+        padding-bottom: 15px;
+}
+.about-content  ol li span
+{
+       
+        color: #333;
+        font-size: 17px;
+        font-weight: 700;
+}
+.about-content ol li a
+{
+        color: #7e7e7e;
+        text-decoration: none;
+        font-weight: 400;
+}
+.about-content button
+{
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #ff305b;
+        border: none;
+        border-radius: 4px;
+        margin-right: 10px;
+        padding: 10px 24px;
+        transition: all 0.3s ease-in-out;
+}
+
+.about-content .btn a
+{
+        color: #fff;
+        text-decoration: none;
+}
+.about-content .btn a i
+{
+        padding-left: 5px;
+}
+.about-content .btn:hover
+{
+        background-color: orangered;
+}
+
+/* section2 */
+#services
+{
+        background-color: #f1f1f1;
+}
+h2
+{
+        font-size: 32px;
+        font-weight: 800;
+        color: #333;   
+        position: relative;
+        line-height: 30px;
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+}
+
+h2::before,h2::after
+{
+        content: "";
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+}
+h2::before
+{
+        border-color: #ff305b;
+        border-style: solid;
+        border-width: 1px 0;
+        bottom: 0;
+        padding: 4px 0 5px;
+        width: 70px;
+}
+h2::after
+{
+        background-color: #ff305b;
+        bottom: 5px;
+        height: 1px;
+        width: 160px;
+}
+#services .item
+{
+        margin-top: 40px;
+        padding: 20px 5px;
+        transition: all .5s;
+        overflow: hidden;
+}
+#services .item:hover
+{
+        background-color: #fff;
+        box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 5.6px 5.3px rgba(0, 0, 0, 0.048),
+        0 11.2px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086)
+}
+.item h3
+{
+        margin-bottom: 15px;
+        color: #333;
+        font-size: 20px;
+        font-weight: 700;
+}
+.item i
+{
+        color: #ff305b;
+        font-size: 30px;
+        margin: 20px 0;
+        -webkit-transition: all 0.3s ;
+        transition: all 0.3s ;
+   
+}
+#services .item:hover i
+{
+        transform: scale(1.3);
+}
+
+
+
+/* section3 */
+
+#portfolio .menu .nav-link
+{
+        text-decoration: none;
+        color: #333;
+        letter-spacing: 1px;
+        padding: 40px 12px;
+        text-transform: uppercase;
+}
+.part
+{
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 30px;
+}
+.part img
+{
+        width: 100%;
+}
+.image-overlay
+{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .4s all;
+        background-color: rgba(51, 51, 51,.7);
+        opacity: 0; 
+}
+.part:hover .image-overlay
+{
+        opacity: 1;
+}
+.image-overlay i
+{
+        position: absolute;
+        color: #ff305b;
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+}
+.nav
+{
+        justify-content: center;
+}
+.nav-tabs, .nav-item.show ,.nav-link, .nav-tabs, .nav-link.active ,.nav-tabs .nav-link  {
+         border:none; 
+    }
+.nav-tabs:hover, .nav-item.show:hover ,.nav-link:hover, .nav-tabs:hover, .nav-link.active  {
+        border:none; 
+   }
+   .nav-tabs .nav-link
+   {
+        transition: all 1s ;
+   }
+.nav-tabs .nav-link.active  
+{
+           color: #ff305b !important;
+}
+
+/* section4 */
+.counter
+{
+        background-color: #f1f1f1;
+}
+.count h3,.cont h3
+{
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0 0 10px;
+        color: #333;
+}
+
+.count h5
+{
+        font-size: 15px;
+        font-weight: 600;
+       
+}
+.count i
+{
+        color: #ff305b;
+        font-size: 26px;
+        margin-bottom: 15px;
+}
+
+/* section5 */
+#testimonial .carousel-item
+{
+        background-color: #f1f1f1;
+        border-radius: 10px;
+}
+.cont h4
+{
+        margin-bottom: 10px;
+}
+.cont a
+{
+        color: #777777;
+        font-size: 15px;
+        text-decoration: none;
+}
+.cont p
+{
+        font-size: 17px;
+        font-style: italic;
+        padding-right: 20px ;
+        font-weight: 500;
+}
+ .triangle
+{
+        width: 0px;
+        height: 0px;
+        border-top: 100px solid #ff305b;
+        border-right:  100px solid transparent;
+        border-bottom:  100px solid transparent;
+        border-left:  100px solid #ff305b;
+        border-top-left-radius: 10px;
+        position: relative;
+        top: -25%;
+        left: 0;
+}
+.triangle .test-img
+{
+        width: 120px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+}
+.test-img img
+{
+        border-radius: 50%;
+        width: 100%;
+
+}
+.carousel-indicators li
+{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 2px solid #ff305b;
+       
+}
+.carousel-indicators .active
+{
+        border-radius: 10px;
+        width: 25px;
+        background-color: #ff305b;
+}
+
+/* section6 */
+#blog
+{
+        background-color: #f1f1f1;
+}
+.container-iframe
+{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 56.25%;  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+      /* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe 
+{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+}
+.blog-cont
+{
+        background-color: #fff;
+        padding: 20px ;
+}
+
+.blog-cont h5
+{
+        color: #555;
+        font-size: 17px;
+        font-weight: 400;
+        margin-bottom: 10px;
+}
+.blog-cont a
+{
+        color: #333;
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+}
+.blog-cont a:hover
+{
+        color: #ff305b;
+ 
+}
+.blog-cont h3 
+{
+        margin-bottom:10px;
+        font-size: 20px;
+        font-weight: 600;
+
+}
+.read-more a
+{
+        font-size: 16px;
+        font-weight: 500;
+}
+/* section7 */
+.sm-input
+{
+        width: 48%;
+}
+input ,textarea
+{
+        padding: 8px;  
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid #ccc;
+}
+input:focus , textarea:focus
+{
+        border-color: #ff305b;
+}
+button
+{
+    background-color: #ff305b;
+    color: #fff;
+    padding: 8px 18px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    font-size: 15px;
+}
+button:hover
+{
+        background-color: orangered;
+}
+
+/* footer */
+footer
+{
+        background-color: #333;
+        color: #fff;
+}
+.footer-icons i
+{
+        color: #fff;
+        padding: 10px 10px 15px
+}
+.footer-icons i:hover
+{
+        color: #ff305b;
+}
+.navbar-dark .navbar-toggler-icon 
+{
+        background-image: none;
+
+}
+.navbar-dark .navbar-toggler 
+{
+        border-color: transparent;
+        color: #fff;
+}
+.navbar-dark .navbar-toggler:hover
+{
+        background-color: transparent;
+}
+
+
+@media screen and (max-width:991px){
+        h1{
+         font-size: 34px !important;
+        } 
+        #home h4{
+                font-size: 18px;
+        }
+        .about-img
+{
+    
+        border:none;
+}
+.overlay-photo
+{
+        width: 0;
+}
+.icons
+{
+        display: none;
+}
+}
